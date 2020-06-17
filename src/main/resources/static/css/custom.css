@@ -1,0 +1,45 @@
+.navbar {
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+.created-date {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1b55e2;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.card-subtitle {
+    color: #888ea8;
+    line-height: 22px;
+}
+
+.card-nickname {
+    align-self: center;
+    color: #515365;
+    font-weight: 600;
+}
+
+
+.dropdown:not(.custom-dropdown-icon) .dropdown-menu button.dropdown-item {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #888ea8;
+    padding: 11px 8px; }
+.dropdown:not(.custom-dropdown-icon) .dropdown-menu button.dropdown-item.active, .dropdown:not(.custom-dropdown-icon) .dropdown-menu button.dropdown-item:active {
+    background-color: transparent;
+    color: #3b3f5c;
+    font-weight: 700; }
+.dropdown:not(.custom-dropdown-icon) .dropdown-menu button.dropdown-item:hover {
+    color: #888ea8;
+    background-color: #f1f2f3; }
+

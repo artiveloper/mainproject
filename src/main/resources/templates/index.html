@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Title</title>
+
+    <link th:href="@{'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'}" rel="stylesheet" >
+    <link th:href="@{/css/bootstrap/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/plugins.css}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand">
+            <a class="navbar-brand" th:href="@{/}">메인프로젝트</a>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/users/sign-up}">회원가입</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/users/sign-in}">로그인</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script th:src="@{/js/libs/jquery-3.1.1.min.js}"></script>
+    <script th:src="@{/js/bootstrap/popper.min.js}"></script>
+    <script th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+    <script th:src="@{/plugins/perfect-scrollbar/perfect-scrollbar.min.js}"></script>
+    <script th:src="@{/js/app.js}"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+</body>
+</html>
