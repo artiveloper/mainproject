@@ -7,21 +7,37 @@
         <div class="col-lg-5">
             <h3 class="my-5"><a href="/">Main Project</a></h3>
             <h3 class="my-5">로그인</h3>
+
+            <div th:if="${message}" class="alert alert-info mb-4" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-x close" data-dismiss="alert">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <a th:text="${message}">회원가입 환영 메시지</a>
+            </div>
+
             <form th:action="@{/users/sign-in}" th:method="post">
                 <div class="form-group">
                     <label for="email" class="text-black">이메일</label>
-                    <input type="email" class="form-control text-black" id="email" name="email" placeholder="example@email.com">
+                    <input type="email" class="form-control text-black" id="email" name="email"
+                           placeholder="example@email.com">
                     <small class="form-text text-danger">이메일 에러메시지</small>
                 </div>
                 <div class="form-group">
                     <label for="password" class="text-black">비밀번호</label>
-                    <input type="password" class="form-control text-black" id="password" name="password" placeholder="********">
+                    <input type="password" class="form-control text-black" id="password" name="password"
+                           placeholder="********">
                     <small class="form-text text-danger">비밀번호 에러메시지</small>
                 </div>
                 <div class="form-group">
                     <div class="d-flex justify-content-between">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="remember-me" name="remember-me" checked>
+                            <input type="checkbox" class="custom-control-input" id="remember-me" name="remember-me"
+                                   checked>
                             <label class="custom-control-label text-dark" for="remember-me">자동로그인</label>
                         </div>
                         <label class="text-dark">
